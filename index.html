@@ -15,11 +15,11 @@
         <div class="container header-container">
             <a href="index.html" class="logo-container"><span class="logo-text">A.Karami</span></a>
             <nav class="nav-links">
-                <a href="index.html" class="active">خانه</a>
-                <a href="about.html">درباره من</a>
-                <a href="services.html">خدمات و مهارت‌ها</a>
-                <a href="portfolio.html">نمونه‌کارها</a>
-                <a href="contact.html">تماس</a>
+                <a href="index.html" class="active" data-translate="nav_home">خانه</a>
+                <a href="about.html" data-translate="nav_about">درباره من</a>
+                <a href="services.html" data-translate="nav_services">خدمات و مهارت‌ها</a>
+                <a href="portfolio.html" data-translate="nav_portfolio">نمونه‌کارها</a>
+                <a href="contact.html" data-translate="nav_contact">تماس</a>
             </nav>
             <div class="header-actions">
                 <button id="theme-toggle" class="btn-icon"><i class="fa-solid fa-moon"></i></button>
@@ -31,13 +31,13 @@
     <section class="hero full-height">
         <div class="container hero-container">
             <div class="hero-text reveal">
-                <h3>سلام، به دنیای دیجیتال من خوش آمدید!</h3>
-                <h1>من <span>علی کرمی</span> هستم</h1>
-                <h2 class="typing-text">یک <span id="typed-output"></span><span class="cursor">|</span></h2>
-                <p>با ترکیب برنامه‌نویسی وب، طراحی رابط کاربری و قدرت هوش مصنوعی، ایده‌های شما را به محصولات دیجیتال خیره‌کننده تبدیل می‌کنم.</p>
+                <h3 data-translate="hero_greeting">سلام، به دنیای دیجیتال من خوش آمدید!</h3>
+                <h1><span data-translate="hero_name_prefix">من</span> <span data-translate="hero_name">علی کرمی</span> <span data-translate="hero_name_suffix">هستم</span></h1>
+                <h2 class="typing-text"><span data-translate="hero_typing_prefix">یک</span> <span id="typed-output"></span><span class="cursor">|</span></h2>
+                <p data-translate="hero_description">با ترکیب برنامه‌نویسی وب، طراحی رابط کاربری و قدرت هوش مصنوعی، ایده‌های شما را به محصولات دیجیتال خیره‌کننده تبدیل می‌کنم.</p>
                 <div class="hero-buttons">
-                    <a href="portfolio.html" class="btn btn-primary">مشاهده نمونه‌کارها</a>
-                    <a href="about.html" class="btn btn-outline">بیشتر درباره من</a>
+                    <a href="portfolio.html" class="btn btn-primary" data-translate="hero_btn_portfolio">مشاهده نمونه‌کارها</a>
+                    <a href="about.html" class="btn btn-outline" data-translate="hero_btn_about">بیشتر درباره من</a>
                 </div>
             </div>
             <div class="hero-image reveal">
@@ -46,11 +46,12 @@
             </div>
         </div>
     </section>
-<footer class="site-footer">
+
+    <footer class="site-footer">
         <div class="container footer-container">
             <div class="footer-about">
                 <a href="index.html" class="logo-container"><span class="logo-text">A.Karami</span></a>
-                <p>تلفیق هنر، تکنولوژی و هوش مصنوعی برای خلق تجربه‌های دیجیتال بی‌نظیر. آماده همکاری در پروژه‌های خلاقانه و توسعه ایده‌های شما.</p>
+                <p data-translate="footer_about_text">تلفیق هنر، تکنولوژی و هوش مصنوعی برای خلق تجربه‌های دیجیتال بی‌نظیر. آماده همکاری در پروژه‌های خلاقانه و توسعه ایده‌های شما.</p>
                 <div class="social-links">
                     <a href="https://wa.me/989373631322" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -60,31 +61,32 @@
                 </div>
             </div>
             <div class="footer-links">
-                <h3>دسترسی سریع</h3>
+                <h3 data-translate="footer_quick_links">دسترسی سریع</h3>
                 <ul>
-                    <li><a href="index.html">خانه</a></li>
-                    <li><a href="about.html">درباره من</a></li>
-                    <li><a href="services.html">خدمات و مهارت‌ها</a></li>
-                    <li><a href="portfolio.html">نمونه‌کارها</a></li>
-                    <li><a href="contact.html">تماس با من</a></li>
+                    <li><a href="index.html" data-translate="nav_home">خانه</a></li>
+                    <li><a href="about.html" data-translate="nav_about">درباره من</a></li>
+                    <li><a href="services.html" data-translate="nav_services">خدمات و مهارت‌ها</a></li>
+                    <li><a href="portfolio.html" data-translate="nav_portfolio">نمونه‌کارها</a></li>
+                    <li><a href="contact.html" data-translate="nav_contact">تماس با من</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <h3>اطلاعات تماس</h3>
+                <h3 data-translate="footer_contact_info">اطلاعات تماس</h3>
                 <ul>
-                    <li><i class="fa-solid fa-location-dot"></i> تهران، خیابان آذربایجان</li>
-                    <li><i class="fa-solid fa-phone"></i> ۰۹۳۷۳۶۳۱۳۲۲</li>
-                    <li><i class="fa-solid fa-envelope"></i> alikarami28@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> <span data-translate="footer_address">تهران، خیابان آذربایجان</span></li>
+                    <li><i class="fa-solid fa-phone"></i> <span data-translate="footer_phone">۰۹۳۷۳۶۳۱۳۲۲</span></li>
+                    <li><i class="fa-solid fa-envelope"></i> <span data-translate="footer_email">alikarami28@gmail.com</span></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; ۱۴۰۵ طراحی و توسعه با <i class="fa-solid fa-heart" style="color: #ef4444;"></i> توسط <strong>علی کرمی</strong>. تمامی حقوق محفوظ است.</p>
+                <p data-translate="footer_copyright">&copy; ۱۴۰۵ طراحی و توسعه با <i class="fa-solid fa-heart" style="color: #ef4444;"></i> توسط <strong>علی کرمی</strong>. تمامی حقوق محفوظ است.</p>
             </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

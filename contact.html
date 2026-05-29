@@ -13,11 +13,11 @@
         <div class="container header-container">
             <a href="index.html" class="logo-container"><span class="logo-text">A.Karami</span></a>
             <nav class="nav-links">
-                <a href="index.html">خانه</a>
-                <a href="about.html">درباره من</a>
-                <a href="services.html">خدمات و مهارت‌ها</a>
-                <a href="portfolio.html">نمونه‌کارها</a>
-                <a href="contact.html" class="active">تماس</a>
+                <a href="index.html" data-translate="nav_home">خانه</a>
+                <a href="about.html" data-translate="nav_about">درباره من</a>
+                <a href="services.html" data-translate="nav_services">خدمات و مهارت‌ها</a>
+                <a href="portfolio.html" data-translate="nav_portfolio">نمونه‌کارها</a>
+                <a href="contact.html" class="active" data-translate="nav_contact">تماس</a>
             </nav>
             <div class="header-actions">
                 <button id="theme-toggle" class="btn-icon"><i class="fa-solid fa-moon"></i></button>
@@ -28,36 +28,36 @@
 
     <section class="page-header reveal">
         <div class="container">
-            <h1 class="page-title">ارتباط با <span>من</span></h1>
-            <p>مشتاقانه منتظر شنیدن ایده‌ها و پروژه‌های شما هستم</p>
+            <h1 class="page-title"><span data-translate="contact_title">ارتباط با</span> <span data-translate="contact_title_span">من</span></h1>
+            <p data-translate="contact_subtitle">مشتاقانه منتظر شنیدن ایده‌ها و پروژه‌های شما هستم</p>
         </div>
     </section>
 
     <section class="container reveal">
         <div class="contact-container">
             <div class="contact-info">
-                <h2>اطلاعات تماس</h2>
-                <p>راحت‌ترین مسیر ارتباطی را انتخاب کنید. من در اسرع وقت پاسخگوی شما خواهم بود.</p>
+                <h2 data-translate="contact_info_title">اطلاعات تماس</h2>
+                <p data-translate="contact_info_text">راحت‌ترین مسیر ارتباطی را انتخاب کنید. من در اسرع وقت پاسخگوی شما خواهم بود.</p>
                 <div class="contact-details mt-30">
                     <div class="contact-detail-item">
                         <div class="icon"><i class="fa-solid fa-phone-volume"></i></div>
                         <div>
-                            <h4>تلفن همراه</h4>
-                            <p>۰۹۳۷۳۶۳۱۳۲۲</p>
+                            <h4 data-translate="contact_phone_label">تلفن همراه</h4>
+                            <p data-translate="contact_phone_value">۰۹۳۷۳۶۳۱۳۲۲</p>
                         </div>
                     </div>
                     <div class="contact-detail-item">
                         <div class="icon"><i class="fa-solid fa-envelope-open-text"></i></div>
                         <div>
-                            <h4>ایمیل مستقیم</h4>
-                            <p>alikarami28@gmail.com</p>
+                            <h4 data-translate="contact_email_label">ایمیل مستقیم</h4>
+                            <p data-translate="contact_email_value">alikarami28@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-detail-item">
                         <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
                         <div>
-                            <h4>آدرس</h4>
-                            <p>تهران، خیابان آذربایجان</p>
+                            <h4 data-translate="contact_address_label">آدرس</h4>
+                            <p data-translate="contact_address_value">تهران، خیابان آذربایجان</p>
                         </div>
                     </div>
                 </div>
@@ -67,24 +67,24 @@
                 <form id="contact-form">
                     <div class="input-group">
                         <input type="text" id="name" required placeholder=" ">
-                        <label for="name">نام و نام خانوادگی</label>
+                        <label for="name" data-translate="form_name_label">نام و نام خانوادگی</label>
                         <span class="error-text" id="name-error"></span>
                     </div>
                     <div class="input-group">
                         <input type="email" id="email" required placeholder=" ">
-                        <label for="email">آدرس ایمیل</label>
+                        <label for="email" data-translate="form_email_label">آدرس ایمیل</label>
                         <span class="error-text" id="email-error"></span>
                     </div>
                     <div class="input-group">
                         <textarea id="message" rows="5" required placeholder=" "></textarea>
-                        <label for="message">توضیحات پروژه یا پیام شما</label>
+                        <label for="message" data-translate="form_message_label">توضیحات پروژه یا پیام شما</label>
                         <span class="error-text" id="message-error"></span>
                     </div>
                     <button type="submit" class="submit-btn">
-                        <span>ارسال پیام</span>
+                        <span data-translate="form_submit">ارسال پیام</span>
                         <i class="fa-regular fa-paper-plane"></i>
                     </button>
-                    <div id="form-success" class="success-message">پیام شما با موفقیت ارسال شد!</div>
+                    <div id="form-success" class="success-message" data-translate="form_success">پیام شما با موفقیت ارسال شد!</div>
                 </form>
             </div>
         </div>
@@ -94,7 +94,7 @@
         <div class="container footer-container">
             <div class="footer-about">
                 <a href="index.html" class="logo-container"><span class="logo-text">A.Karami</span></a>
-                <p>تلفیق هنر، تکنولوژی و هوش مصنوعی برای خلق تجربه‌های دیجیتال بی‌نظیر. آماده همکاری در پروژه‌های خلاقانه و توسعه ایده‌های شما.</p>
+                <p data-translate="footer_about_text">تلفیق هنر، تکنولوژی و هوش مصنوعی برای خلق تجربه‌های دیجیتال بی‌نظیر. آماده همکاری در پروژه‌های خلاقانه و توسعه ایده‌های شما.</p>
                 <div class="social-links">
                     <a href="https://wa.me/989373631322" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -104,31 +104,32 @@
                 </div>
             </div>
             <div class="footer-links">
-                <h3>دسترسی سریع</h3>
+                <h3 data-translate="footer_quick_links">دسترسی سریع</h3>
                 <ul>
-                    <li><a href="index.html">خانه</a></li>
-                    <li><a href="about.html">درباره من</a></li>
-                    <li><a href="services.html">خدمات و مهارت‌ها</a></li>
-                    <li><a href="portfolio.html">نمونه‌کارها</a></li>
-                    <li><a href="contact.html">تماس با من</a></li>
+                    <li><a href="index.html" data-translate="nav_home">خانه</a></li>
+                    <li><a href="about.html" data-translate="nav_about">درباره من</a></li>
+                    <li><a href="services.html" data-translate="nav_services">خدمات و مهارت‌ها</a></li>
+                    <li><a href="portfolio.html" data-translate="nav_portfolio">نمونه‌کارها</a></li>
+                    <li><a href="contact.html" data-translate="nav_contact">تماس با من</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <h3>اطلاعات تماس</h3>
+                <h3 data-translate="footer_contact_info">اطلاعات تماس</h3>
                 <ul>
-                    <li><i class="fa-solid fa-location-dot"></i> تهران، خیابان آذربایجان</li>
-                    <li><i class="fa-solid fa-phone"></i> ۰۹۳۷۳۶۳۱۳۲۲</li>
-                    <li><i class="fa-solid fa-envelope"></i> alikarami28@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> <span data-translate="footer_address">تهران، خیابان آذربایجان</span></li>
+                    <li><i class="fa-solid fa-phone"></i> <span data-translate="footer_phone">۰۹۳۷۳۶۳۱۳۲۲</span></li>
+                    <li><i class="fa-solid fa-envelope"></i> <span data-translate="footer_email">alikarami28@gmail.com</span></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; ۱۴۰۵ طراحی و توسعه با <i class="fa-solid fa-heart" style="color: #ef4444;"></i> توسط <strong>علی کرمی</strong>. تمامی حقوق محفوظ است.</p>
+                <p data-translate="footer_copyright">&copy; ۱۴۰۵ طراحی و توسعه با <i class="fa-solid fa-heart" style="color: #ef4444;"></i> توسط <strong>علی کرمی</strong>. تمامی حقوق محفوظ است.</p>
             </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -231,3 +231,106 @@ header {
     .before-after-container { height: 280px; }
     .resize-img-wrapper img { width: 100%; height: 280px; }
 }
+/* ==========================================================================
+   استایل‌های دکمه تغییر زبان
+   ========================================================================== */
+.lang-toggle-btn {
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.95rem !important;
+    font-weight: 600;
+    background: var(--bg-alt) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 25px !important;
+    padding: 6px 14px !important;
+    transition: var(--transition);
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.lang-toggle-btn:hover {
+    background: var(--accent-color) !important;
+    color: #fff !important;
+    border-color: var(--accent-color) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.lang-toggle-btn .lang-flag {
+    font-size: 1.1rem;
+}
+
+.lang-toggle-btn .lang-text {
+    font-size: 0.85rem;
+}
+
+/* تنظیمات LTR برای انگلیسی */
+html[dir="ltr"] body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html[dir="ltr"] .nav-links a::after {
+    right: auto;
+    left: 0;
+}
+
+html[dir="ltr"] .footer-links ul li a:hover {
+    transform: translateX(6px);
+}
+
+html[dir="ltr"] .footer-links h3::after,
+html[dir="ltr"] .footer-contact h3::after {
+    right: auto;
+    left: 0;
+}
+
+html[dir="ltr"] .about-list i {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+html[dir="ltr"] .resume-icon {
+    margin-left: 0;
+    margin-right: 12px;
+}
+
+html[dir="ltr"] .contact-detail-item {
+    text-align: left;
+}
+
+html[dir="ltr"] .input-group label {
+    right: auto;
+    left: 15px;
+}
+
+html[dir="ltr"] .error-text {
+    right: auto;
+    left: 5px;
+}
+
+html[dir="ltr"] .lightbox-close {
+    left: auto;
+    right: 15px;
+}
+
+html[dir="ltr"] .footer-contact ul li {
+    justify-content: flex-start;
+}
+
+html[dir="ltr"] .footer-about .social-links {
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    html[dir="ltr"] .footer-links h3::after,
+    html[dir="ltr"] .footer-contact h3::after {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+    
+    html[dir="ltr"] .footer-about .social-links,
+    html[dir="ltr"] .footer-contact ul li {
+        justify-content: center;
+    }
+}

@@ -13,11 +13,11 @@
         <div class="container header-container">
             <a href="index.html" class="logo-container"><span class="logo-text">A.Karami</span></a>
             <nav class="nav-links">
-                <a href="index.html">خانه</a>
-                <a href="about.html">درباره من</a>
-                <a href="services.html">خدمات و مهارت‌ها</a>
-                <a href="portfolio.html" class="active">نمونه‌کارها</a>
-                <a href="contact.html">تماس</a>
+                <a href="index.html" data-translate="nav_home">خانه</a>
+                <a href="about.html" data-translate="nav_about">درباره من</a>
+                <a href="services.html" data-translate="nav_services">خدمات و مهارت‌ها</a>
+                <a href="portfolio.html" class="active" data-translate="nav_portfolio">نمونه‌کارها</a>
+                <a href="contact.html" data-translate="nav_contact">تماس</a>
             </nav>
             <div class="header-actions">
                 <button id="theme-toggle" class="btn-icon"><i class="fa-solid fa-moon"></i></button>
@@ -28,72 +28,82 @@
 
     <section class="page-header reveal">
         <div class="container">
-            <h1 class="page-title">نمونه‌کارهای <span>منتخب</span></h1>
-            <p>روی هر پروژه کلیک کنید تا جزئیات فنی و مطالعه موردی (Case Study) باز شود</p>
+            <h1 class="page-title"><span data-translate="portfolio_title">نمونه‌کارهای</span> <span data-translate="portfolio_title_span">منتخب</span></h1>
+            <p data-translate="portfolio_subtitle">روی هر پروژه کلیک کنید تا جزئیات فنی و مطالعه موردی (Case Study) باز شود</p>
         </div>
     </section>
 
     <section class="container reveal">
-<div class="premium-slider-section">
-    <h3 class="slider-title"><i class="fa-solid fa-wand-magic-sparkles"></i> قدرت پردازش و بازسازی تصویر هوش مصنوعی (پرتره اختصاصی)</h3>
-    <div class="before-after-container">
-        <img src="12.png" alt="طراحی نهایی هوش مصنوعی">
-        <div class="resize-img-wrapper">
-            <img src="11.jpg" alt="تصویر خام اولیه">
+        <div class="premium-slider-section">
+            <h3 class="slider-title"><i class="fa-solid fa-wand-magic-sparkles"></i> <span data-translate="before_after_title">قدرت پردازش و بازسازی تصویر هوش مصنوعی (پرتره اختصاصی)</span></h3>
+            <div class="before-after-container">
+                <img src="12.png" alt="طراحی نهایی هوش مصنوعی">
+                <div class="resize-img-wrapper">
+                    <img src="11.jpg" alt="تصویر خام اولیه">
+                </div>
+                <span class="handle-bar"></span>
+            </div>
         </div>
-        <span class="handle-bar"></span>
-    </div>
-</div>
-
 
         <div class="filter-buttons mt-50">
-            <button class="filter-btn active" data-filter="all">همه پروژه‌ها</button>
-            <button class="filter-btn" data-filter="web">توسعه وب</button>
-            <button class="filter-btn" data-filter="ai">هوش مصنوعی</button>
-            <button class="filter-btn" data-filter="graphic">گرافیک و دیزاین</button>
+            <button class="filter-btn active" data-filter="all" data-translate="filter_all">همه پروژه‌ها</button>
+            <button class="filter-btn" data-filter="web" data-translate="filter_web">توسعه وب</button>
+            <button class="filter-btn" data-filter="ai" data-translate="filter_ai">هوش مصنوعی</button>
+            <button class="filter-btn" data-filter="graphic" data-translate="filter_graphic">گرافیک و دیزاین</button>
         </div>
 
         <div class="gallery">
-            <div class="portfolio-item" data-category="web" data-title="فروشگاه آنلاین شیک" data-tech="HTML5, CSS3, JavaScript ES6" data-desc="طراحی فرانت‌اند کاملاً ریسپانسیو یک پلتفرم فروشگاهی مدرن با سبد خرید پویا، فیلتر محصولات پیشرفته و معماری بهینه‌سازی شده برای سئو جزییات فنی کاملاً رعایت شده است.">
+            <!-- آیتم ۱ -->
+            <div class="portfolio-item" data-category="web" data-title="فروشگاه آنلاین شیک" data-tech="HTML5, CSS3, JavaScript ES6" data-desc="طراحی فرانت‌اند کاملاً ریسپانسیو یک پلتفرم فروشگاهی مدرن">
                 <img src="portfolio-1.jpg" alt="طراحی وب" class="portfolio-img">
                 <div class="portfolio-overlay">
-                    <h3>فروشگاه آنلاین شیک</h3>
-                    <p>برنامه‌نویسی فرانت‌اند</p>
+                    <h3 data-translate="portfolio1_title">فروشگاه آنلاین شیک</h3>
+                    <p data-translate="portfolio1_cat">برنامه‌نویسی فرانت‌اند</p>
                 </div>
             </div>
-            <div class="portfolio-item" data-category="ai" data-title="پرتره فوق‌واقع‌گرایانه سینمایی" data-tech="Midjourney v6, Photoshop AI" data-desc="خلق تصویر کانسپت آرت با حفظ ۱۰۰ درصدی جزئیات چهره مرجع بدون دگرگونی فرم صورت، نورپردازی طلایی استودیویی و بافت سنگی/پارچه‌ای با وضوح رزولوشن 8K.">
+            
+            <!-- آیتم ۲ -->
+            <div class="portfolio-item" data-category="ai" data-title="پرتره فوق‌واقع‌گرایانه سینمایی" data-tech="Midjourney v6, Photoshop AI" data-desc="خلق تصویر کانسپت آرت با حفظ ۱۰۰ درصدی جزئیات">
                 <img src="portfolio-2.jpg" alt="هوش مصنوعی" class="portfolio-img">
                 <div class="portfolio-overlay">
-                    <h3>فضاسازی سینمایی 8K</h3>
-                    <p>Midjourney AI</p>
+                    <h3 data-translate="portfolio2_title">فضاسازی سینمایی 8K</h3>
+                    <p data-translate="portfolio2_cat">Midjourney AI</p>
                 </div>
             </div>
-            <div class="portfolio-item" data-category="graphic" data-title="برندینگ و هویت بصری کافه آرمین" data-tech="Adobe Illustrator, Photoshop" data-desc="طراحی مینی‌مالیستی لوگو و پکیج هویت برند تجاری کافه آرمین با رعایت ساختار متوازن هندسی و ترکیب رنگی جذاب متناسب با فضای دکوراسیون داخلی کافه.">
+            
+            <!-- آیتم ۳ -->
+            <div class="portfolio-item" data-category="graphic" data-title="برندینگ و هویت بصری کافه آرمین" data-tech="Adobe Illustrator, Photoshop" data-desc="طراحی مینی‌مالیستی لوگو و پکیج هویت برند">
                 <img src="portfolio-3.jpg" alt="گرافیک" class="portfolio-img">
                 <div class="portfolio-overlay">
-                    <h3>طراحی لوگو کافه آرمین</h3>
-                    <p>گرافیک دیزاین</p>
+                    <h3 data-translate="portfolio3_title">طراحی لوگو کافه آرمین</h3>
+                    <p data-translate="portfolio3_cat">گرافیک دیزاین</p>
                 </div>
             </div>
-            <div class="portfolio-item" data-category="web" data-title="داشبورد مدیریت داده‌های مالی" data-tech="Vanilla JS, Chart.js, CSS Grid" data-desc="یک ابزار وب کاربردی برای مصورسازی داده‌های آماری با تم‌های دارک و لایت هوشمند، نمودارهای انیمیشنی پویا و سرعت رندرینگ فوق‌العاده بالا زیر ۱ ثانیه.">
+            
+            <!-- آیتم ۴ -->
+            <div class="portfolio-item" data-category="web" data-title="داشبورد مدیریت داده‌های مالی" data-tech="Vanilla JS, Chart.js, CSS Grid" data-desc="یک ابزار وب کاربردی برای مصورسازی داده‌های آماری">
                 <img src="portfolio-4.jpg" alt="داشبورد" class="portfolio-img">
                 <div class="portfolio-overlay">
-                    <h3>داشبورد مدیریت داده</h3>
-                    <p>طراحی UI/UX و کدنویسی</p>
+                    <h3 data-translate="portfolio4_title">داشبورد مدیریت داده</h3>
+                    <p data-translate="portfolio4_cat">طراحی UI/UX و کدنویسی</p>
                 </div>
             </div>
-            <div class="portfolio-item" data-category="ai" data-title="طراحی کانسپت سنتی یلدا" data-tech="Generative AI, Prompt Engineering" data-desc="ترکیب المان‌های فرهنگی ایرانی از جمله شال ترمه سنتی، انار و چیدمان سفره یلدایی پیرامون کاراکترهای تصویر بدون ایجاد کوچکترین تغییر ساختاری در فرم چهره‌ها.">
+            
+            <!-- آیتم ۵ -->
+            <div class="portfolio-item" data-category="ai" data-title="طراحی کانسپت سنتی یلدا" data-tech="Generative AI, Prompt Engineering" data-desc="ترکیب المان‌های فرهنگی ایرانی">
                 <img src="portfolio-5.jpg" alt="هوش مصنوعی سنتی" class="portfolio-img">
                 <div class="portfolio-overlay">
-                    <h3>کانسپت سنتی ایرانی (یلدا)</h3>
-                    <p>تولید با هوش مصنوعی</p>
+                    <h3 data-translate="portfolio5_title">کانسپت سنتی ایرانی (یلدا)</h3>
+                    <p data-translate="portfolio5_cat">تولید با هوش مصنوعی</p>
                 </div>
             </div>
-            <div class="portfolio-item" data-category="graphic" data-title="پوستر تبلیغاتی مدرن تعاملی" data-tech="Photoshop CC" data-desc="طراحی پوستر کمپین بازاریابی دیجیتال بر پایه تایپوگرافی اختصاصی و اصول هماهنگی بصری گشتالت برای جذب حداکثری مخاطبان در فضای مجازی.">
+            
+            <!-- آیتم ۶ -->
+            <div class="portfolio-item" data-category="graphic" data-title="پوستر تبلیغاتی مدرن تعاملی" data-tech="Photoshop CC" data-desc="طراحی پوستر کمپین بازاریابی دیجیتال">
                 <img src="portfolio-6.jpg" alt="پوستر" class="portfolio-img">
                 <div class="portfolio-overlay">
-                    <h3>طراحی پوستر تبلیغاتی</h3>
-                    <p>تایپوگرافی و فتوشاپ</p>
+                    <h3 data-translate="portfolio6_title">طراحی پوستر تبلیغاتی</h3>
+                    <p data-translate="portfolio6_cat">تایپوگرافی و فتوشاپ</p>
                 </div>
             </div>
         </div>
@@ -107,9 +117,9 @@
             </div>
             <div class="lightbox-info-side">
                 <h2 id="lightbox-title">عنوان پروژه</h2>
-                <div class="lightbox-tech"><i class="fa-solid fa-gear"></i> <strong>تکنولوژی‌ها:</strong> <span id="lightbox-tech-tags">...</span></div>
+                <div class="lightbox-tech"><i class="fa-solid fa-gear"></i> <strong data-translate="lightbox_tech_label">تکنولوژی‌ها:</strong> <span id="lightbox-tech-tags">...</span></div>
                 <p id="lightbox-desc">توضیحات پروژه...</p>
-                <a href="contact.html" class="btn btn-primary mt-30">سفارش پروژه مشابه</a>
+                <a href="contact.html" class="btn btn-primary mt-30" data-translate="lightbox_btn">سفارش پروژه مشابه</a>
             </div>
         </div>
     </div>
@@ -118,7 +128,7 @@
         <div class="container footer-container">
             <div class="footer-about">
                 <a href="index.html" class="logo-container"><span class="logo-text">A.Karami</span></a>
-                <p>تلفیق هنر، تکنولوژی و هوش مصنوعی برای خلق تجربه‌های دیجیتال بی‌نظیر. آماده همکاری در پروژه‌های خلاقانه و توسعه ایده‌های شما.</p>
+                <p data-translate="footer_about_text">تلفیق هنر، تکنولوژی و هوش مصنوعی برای خلق تجربه‌های دیجیتال بی‌نظیر. آماده همکاری در پروژه‌های خلاقانه و توسعه ایده‌های شما.</p>
                 <div class="social-links">
                     <a href="https://wa.me/989373631322" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -128,31 +138,32 @@
                 </div>
             </div>
             <div class="footer-links">
-                <h3>دسترسی سریع</h3>
+                <h3 data-translate="footer_quick_links">دسترسی سریع</h3>
                 <ul>
-                    <li><a href="index.html">خانه</a></li>
-                    <li><a href="about.html">درباره من</a></li>
-                    <li><a href="services.html">خدمات و مهارت‌ها</a></li>
-                    <li><a href="portfolio.html">نمونه‌کارها</a></li>
-                    <li><a href="contact.html">تماس با من</a></li>
+                    <li><a href="index.html" data-translate="nav_home">خانه</a></li>
+                    <li><a href="about.html" data-translate="nav_about">درباره من</a></li>
+                    <li><a href="services.html" data-translate="nav_services">خدمات و مهارت‌ها</a></li>
+                    <li><a href="portfolio.html" data-translate="nav_portfolio">نمونه‌کارها</a></li>
+                    <li><a href="contact.html" data-translate="nav_contact">تماس با من</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <h3>اطلاعات تماس</h3>
+                <h3 data-translate="footer_contact_info">اطلاعات تماس</h3>
                 <ul>
-                    <li><i class="fa-solid fa-location-dot"></i> تهران، خیابان آذربایجان</li>
-                    <li><i class="fa-solid fa-phone"></i> ۰۹۳۷۳۶۳۱۳۲۲</li>
-                    <li><i class="fa-solid fa-envelope"></i> alikarami28@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> <span data-translate="footer_address">تهران، خیابان آذربایجان</span></li>
+                    <li><i class="fa-solid fa-phone"></i> <span data-translate="footer_phone">۰۹۳۷۳۶۳۱۳۲۲</span></li>
+                    <li><i class="fa-solid fa-envelope"></i> <span data-translate="footer_email">alikarami28@gmail.com</span></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; ۱۴۰۵ طراحی و توسعه با <i class="fa-solid fa-heart" style="color: #ef4444;"></i> توسط <strong>علی کرمی</strong>. تمامی حقوق محفوظ است.</p>
+                <p data-translate="footer_copyright">&copy; ۱۴۰۵ طراحی و توسعه با <i class="fa-solid fa-heart" style="color: #ef4444;"></i> توسط <strong>علی کرمی</strong>. تمامی حقوق محفوظ است.</p>
             </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
