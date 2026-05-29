@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================================================== */
     const typedTextSpan = document.getElementById("typed-output");
     if (typedTextSpan) {
-        const textArray = ["توسعه‌دهنده وب فرانت‌پند", "طراح تجربه کاربری (UI/UX)", "متخصص پردازش تصویر هوش مصنوعی", "پشتیبان ارشد سیستم‌های هوشمند"];
+        const textArray = ["توسعه‌دهنده وب فرانت‌اند", "طراح تجربه کاربری (UI/UX)", "متخصص پردازش تصویر هوش مصنوعی", "پشتیبان ارشد سیستم‌های هوشمند"];
         let textArrayIndex = 0, charIndex = 0;
 
         function type() {
